@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rosemary Bookshop</title>
+
+    <link rel="stylesheet" href="design.css">
+</head>
+<body>
+
+<!-- Header -->
+<header>
+    <h1>📚 Rosemary Bookshop</h1>
+    <p>Your one-stop shop for school & literature books</p>
+</header>
+
+<!-- Navigation -->
+<nav>
+    <a href="one.html">Home</a>
+    <a href="school-books.html">School Books</a>
+    <a href="literature.html">Literature</a>
+    <a href="contact.html">Contact</a>
+</nav>
+
+<!-- Main Content -->
+<main>
+
+    <!-- Search Bar -->
+    <input
+        type="text"
+        id="searchInput"
+        placeholder="Search books..."
+        onkeyup="searchBooks()">
+
+    <!-- Featured Books -->
+    <h2>Featured Books</h2>
+
+    <div class="book-list">
+
+        <div class="book-card">
+            <h3 class="book-title">Mathematics Class 10</h3>
+            <p>School Book</p>
+            <p>₹350</p>
+            <button onclick="addToCart('Mathematics Class 10')">
+                Add to Cart
+            </button>
+        </div>
+
+        <div class="book-card">
+            <h3 class="book-title">English Literature</h3>
+            <p>Literature</p>
+            <p>₹450</p>
+            <button onclick="addToCart('English Literature')">
+                Add to Cart
+            </button>
+        </div>
+
+        <div class="book-card">
+            <h3 class="book-title">World Atlas</h3>
+            <p>Reference</p>
+            <p>₹600</p>
+            <button onclick="addToCart('World Atlas')">
+                Add to Cart
+            </button>
+        </div>
+
+    </div>
+
+    <!-- Categories -->
+    <h2>Book Categories</h2>
+
+    <div class="categories">
+
+        <div class="category-box">📘 School Books</div>
+        <div class="category-box">📖 Literature</div>
+        <div class="category-box">🗺️ Atlases</div>
+
+    </div>
+
+</main>
+
+<!-- Footer -->
+<footer>
+    <p>© 2026 Rosemary Bookshop</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
